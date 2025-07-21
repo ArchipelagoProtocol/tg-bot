@@ -1,0 +1,33 @@
+{
+  "$schema": "https://swc.rs/schema.json",
+  "sourceMaps": true,
+  "module": {
+    "type": "commonjs"
+  },
+  "jsc": {
+    "target": "esnext",
+    "parser": {
+      "syntax": "typescript",
+      "decorators": true,
+      "dynamicImport": true
+    },
+    "transform": {
+      "legacyDecorator": true,
+      "decoratorMetadata": true
+    },
+    "keepClassNames": true,
+    "baseUrl": "./",
+    "paths": {
+      "@domains/*": [
+        "./src/domains/*"
+      ],
+      "@infra/*": [
+        "./src/infra/*"
+      ],
+      "@common/*": [
+        "./src/common/*"
+      ]
+    }
+  },
+  "minify": false
+}
